@@ -1,10 +1,27 @@
-# Projet-sur-la-Crypte
-Ce projet consiste à utiliser un capteur de température DHT11 et un buzzer passif avec une carte Arduino Uno pour simuler un artefact ancien qui réagit au souffle en jouant une mélodie. L'objectif est de refroidir le capteur pour déclencher des mélodies.
-# Contexte
-Tu es dans une pièce sombre et mystérieuse. Au milieu, il y un objet étrange : un petit cristal connecté à une boîte qui peut jouer de la musique.
-Sur le cristal, il est écrit :
-"Seul le souffle des étoiles révélera la mélodie."
-Tu comprends que ce cristal est comme un thermomètre magique (le capteur TMP36). Il mesure la température autour de lui. Si l'air est trop chaud, il reste silencieux. Mais si tu souffles dessus pour le refroidir, il s'active et fait jouer une mélodie grâce à la boîte sonore (le buzzer).
-Défi : souffler sur le capteur pour faire baisser la température et déclencher la musique!
+# Project-on-the-Crypt
+This project involves using a DHT11 temperature sensor and passive buzzer with an Arduino Uno board to simulate an ancient artifact that responds to breath by playing a melody. The goal is to cool the sensor to trigger melodies.
+# Context
+You are in a dark and mysterious room. In the middle, there is a strange object: a small crystal connected to a box that can play music.
+On the crystal it is written:
+“Only the breath of the stars will reveal the melody.”
+You understand that this crystal is like a magic thermometer (the TMP36 sensor). He measures the temperature around him. If the air is too hot, it remains silent. But if you blow on it to cool it, it activates and plays a melody thanks to the sound box (the buzzer).
+Challenge: blow on the sensor to lower the temperature and trigger the music!
 
-![image](https://github.com/user-attachments/assets/5699a76f-a5ab-45a4-9e90-c52b67821c5c)
+# Necessary equipment
+##The DHT11 module
+###Features 
+Power supply: 3V to 5.5V  
+Consumption: 0.5 mA nominal / 2.5 mA maximum
+Temperature measurement range: 0°C to 50°C ± 2°C
+Humidity measurement range: 20-90%RH ±5%RH
+Size:15mm x 12mm x 5.5mm
+Weight: 3g
+
+##Arduino Uno 
+Arduino Uno is a microcontroller board based on the ATmega328P.
+• Microcontroller: ATmega328P (8 bits, 16 MHz).
+• Memory (32 KB flash memory, 2 KB RAM, 1 KB EEPROM memory).
+• Inputs/Outputs (14 digital pins, 6 analog inputs).
+• Power supply: 5V (via USB or external 7-12V power supply).
+• Communication: USB port for programming and serial communication.
+

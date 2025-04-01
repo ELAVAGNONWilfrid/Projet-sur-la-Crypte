@@ -8,8 +8,8 @@ You understand that this crystal is like a magic thermometer (the TMP36 sensor).
 Challenge: blow on the sensor to lower the temperature and trigger the music!
 
 # Necessary equipment
-##The DHT11 module
-###Features 
+## The DHT11 module
+### Features 
 Power supply: 3V to 5.5V  
 Consumption: 0.5 mA nominal / 2.5 mA maximum
 Temperature measurement range: 0°C to 50°C ± 2°C
@@ -17,7 +17,7 @@ Humidity measurement range: 20-90%RH ±5%RH
 Size:15mm x 12mm x 5.5mm
 Weight: 3g
 
-##Arduino Uno 
+## Arduino Uno 
 Arduino Uno is a microcontroller board based on the ATmega328P.
 • Microcontroller: ATmega328P (8 bits, 16 MHz).
 • Memory (32 KB flash memory, 2 KB RAM, 1 KB EEPROM memory).

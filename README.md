@@ -26,9 +26,13 @@ Arduino Uno is a microcontroller board based on the ATmega328P.
 ![image](https://github.com/user-attachments/assets/7ac1187d-d48a-40df-bce6-43f1f234e987)
 
 • Microcontroller: ATmega328P (8 bits, 16 MHz).
+
 • Memory (32 KB flash memory, 2 KB RAM, 1 KB EEPROM memory).
+
 • Inputs/Outputs (14 digital pins, 6 analog inputs).
+
 • Power supply: 5V (via USB or external 7-12V power supply).
+
 • Communication: USB port for programming and serial communication.
 
 ## Breadboard

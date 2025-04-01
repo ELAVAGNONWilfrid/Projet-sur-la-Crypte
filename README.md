@@ -42,6 +42,7 @@ DHT11 Sensor Connections
 - Vout pin of the DHT11 → Pin 2 on the Arduino (to read the temperature).
 - Vcc pin of DHT11 → 5V on the Arduino.
 - GND pin of the DHT11 → GND on the Arduino.
+
 Passive buzzer connections
 - Positive pin of the buzzer → Pin 8 on the Arduino (to control the melody).
 - Buzzer negative pin → GND on the Arduino.

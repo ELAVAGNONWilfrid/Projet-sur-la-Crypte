@@ -54,26 +54,34 @@ Passive buzzer connections
 
 ## Arduino code
 // Include the DHT library for temperature and humidity sensing
+
 #include <DHT.h>
 
 // Define the pin for the action (e.g., an LED)
+
 #define ACTION_PIN 13
 
 // Define the pin and type of the DHT sensor
+
 #define DHT_PIN 2       // Pin where the DHT sensor is connected
+
 #define DHT_TYPE DHT11  // Type of DHT sensor (DHT11, DHT22, etc.)
 
 // Initialize the DHT sensor
 DHT dht(DHT_PIN, DHT_TYPE);
 
 // Define the pin for the buzzer
+
 #define BUZZER_PIN 8
 
 // Define temperature thresholds
+
 #define TEMP_SEUIL_20 20  // Temperature threshold in degrees Celsius (for magical melody)
+
 #define TEMP_SEUIL_22 22  // Temperature threshold in degrees Celsius (for Frère Jacques melody)
 
 // Define the verification delay (30 seconds)
+
 #define DELAI_VERIFICATION 30000  // 30 seconds in milliseconds
 
 /* Settings for the melody below 20°C */
@@ -105,23 +113,41 @@ int noteDurations[] = {
 /* Settings for the melody below 20°C */
 
 // Define musical notes (frequencies in Hz)
+
 #define NOTE_C4 262
+
 #define NOTE_D4 294
+
 #define NOTE_E4 330
+
 #define NOTE_F4 349
+
 #define NOTE_G4 392
+
 #define NOTE_A4 440
+
 #define NOTE_AS4 466
+
 #define NOTE_B4 494
+
 #define NOTE_C5 523
+
 #define NOTE_D5 587
+
 #define NOTE_E5 659
+
 #define NOTE_F5 698
+
 #define NOTE_G5 784
+
 #define NOTE_A5 880
+
 #define NOTE_B5 988
+
 #define NOTE_C6 1047
+
 #define NOTE_D6 1175
+
 #define NOTE_E6 1319
 
 // Magical and fantastic melody - inspired by discovery/success music in video games
@@ -173,15 +199,25 @@ int magicalDurations[] = {
 /* Settings for the melody above 30°C */
 
 // Define musical notes (frequencies in Hz)
+
 #define NOTE_A3 220  // Low A
+
 #define NOTE_B3 247  // B
+
 #define NOTE_C4 262  // C
+
 #define NOTE_D4 294  // D
+
 #define NOTE_E4 330  // E
+
 #define NOTE_F4 349  // F
+
 #define NOTE_G4 392  // G
+
 #define NOTE_A4 440  // A
+
 #define NOTE_D5 587  // High D
+
 #define NOTE_A5 880  // High A
 
 // Notes for the alert melody (progression from low to high)
@@ -353,7 +389,5 @@ void loop() {
   digitalWrite(ACTION_PIN, HIGH);  // Turn on the LED (or perform another action)
   delay(5000);                     // Keep the action active for 5 seconds
   digitalWrite(ACTION_PIN, LOW);   // Turn off the LED
-
-
   delay(1000);  // Wait 1 second before restarting
 }

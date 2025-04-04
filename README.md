@@ -55,26 +55,13 @@ Passive buzzer connections
 ## Arduino code
 // Include the DHT library for temperature and humidity sensing
 
+cpp
+
 #include <DHT.h>
-
-// Define the pin for the action (e.g., an LED)
-
-#define ACTION_PIN 13
-
-// Define the pin and type of the DHT sensor
 
 #define DHT_PIN 2       // Pin where the DHT sensor is connected
 
-#define DHT_TYPE DHT11  // Type of DHT sensor (DHT11, DHT22, etc.)
-
-// Initialize the DHT sensor
-DHT dht(DHT_PIN, DHT_TYPE);
-
-// Define the pin for the buzzer
-
 #define BUZZER_PIN 8
-
-// Define temperature thresholds
 
 #define TEMP_SEUIL_20 20  // Temperature threshold in degrees Celsius (for magical melody)
 
@@ -391,3 +378,4 @@ void loop() {
   digitalWrite(ACTION_PIN, LOW);   // Turn off the LED
   delay(1000);  // Wait 1 second before restarting
 }
+---

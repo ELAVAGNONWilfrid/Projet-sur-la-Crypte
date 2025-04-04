@@ -378,4 +378,5 @@ void loop() {
   digitalWrite(ACTION_PIN, LOW);   // Turn off the LED
   delay(1000);  // Wait 1 second before restarting
 }
+
 ---

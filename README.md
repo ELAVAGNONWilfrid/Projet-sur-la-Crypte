@@ -78,26 +78,42 @@ cpp
 
 // Frère Jacques melody - Notes (frequencies) and durations (in milliseconds)
 int melody[] = {
-  262, 294, 330, 262,            // Frère Jacques
-  262, 294, 330, 262,            // Frère Jacques
-  330, 349, 392,                 // Dormez-vous ?
-  330, 349, 392,                 // Dormez-vous ?
-  392, 440, 392, 349, 330, 262,  // Sonnez les matines !
-  392, 440, 392, 349, 330, 262,  // Sonnez les matines !
-  262, 196, 262,                 // Ding, dang, dong
-  262, 196, 262                  // Ding, dang, dong
+  262, 294, 330, 262,           
+  // Frère Jacques
+  262, 294, 330, 262,          
+  // Frère Jacques
+  330, 349, 392,               
+  // Dormez-vous ?
+  330, 349, 392,              
+  // Dormez-vous ?
+  392, 440, 392, 349, 330, 262,  
+  // Sonnez les matines !
+  392, 440, 392, 349, 330, 262, 
+  // Sonnez les matines !
+  262, 196, 262,                
+  // Ding, dang, dong
+  262, 196, 262                 
+  // Ding, dang, dong
 };
 
 // Durations for each note in the melody
 int noteDurations[] = {
   500, 500, 500, 500,
+  
   500, 500, 500, 500,
+  
   500, 500, 1000,
+  
   500, 500, 1000,
+  
   250, 250, 250, 250, 500, 500,
+  
   250, 250, 250, 250, 500, 500,
+  
   500, 500, 1000,
+  
   500, 500, 1000
+  
 };
 
 /* Settings for the melody below 20°C */
@@ -147,19 +163,24 @@ int magicalMelody[] = {
 
   // Part 2: First triumphant motif
   NOTE_E6, NOTE_D6, NOTE_C6, NOTE_G5,
+  
   NOTE_E6, NOTE_D6, NOTE_C6, NOTE_G5,
 
   // Part 3: Magical passage (series of chords)
   NOTE_A5, NOTE_C6, NOTE_A5, NOTE_C6,
+  
   NOTE_G5, NOTE_B5, NOTE_G5, NOTE_B5,
 
   // Part 4: Culminating fanfare
   NOTE_C6, NOTE_G5, NOTE_E5, NOTE_G5,
+  
   NOTE_C6, NOTE_E6, NOTE_D6, NOTE_E6,
 
   // Part 5: Magical finale (descending arpeggio followed by ascent)
   NOTE_C6, NOTE_A5, NOTE_F5, NOTE_D5,
+  
   NOTE_C5, NOTE_D5, NOTE_F5, NOTE_A5,
+  
   NOTE_C6, NOTE_E6
 };
 
@@ -170,19 +191,24 @@ int magicalDurations[] = {
 
   // Part 2: First triumphant motif - more marked rhythm
   2, 2, 2, 1,
+  
   2, 2, 2, 1,
 
   // Part 3: Magical passage - swaying rhythm
   4, 4, 4, 4,
+  
   4, 4, 4, 4,
 
   // Part 4: Culminating fanfare - triumphant march
   2, 4, 4, 2,
+  
   2, 3, 3, 1,
 
   // Part 5: Magical finale - epic conclusion
   2, 2, 2, 2,
+  
   4, 4, 4, 4,
+  
   2, 1
 };
 
@@ -214,18 +240,22 @@ int magicalDurations[] = {
 int Alertmelody[] = {
   // Phase 1 - Initial tension (water droplets)
   NOTE_A3, NOTE_D4, NOTE_A3, 0,
+  
   NOTE_A3, NOTE_D4, NOTE_A3, 0,
 
   // Phase 2 - Increasing tension
   NOTE_A3, NOTE_D4, NOTE_A3, NOTE_E4,
+  
   NOTE_A3, NOTE_D4, NOTE_A3, NOTE_E4,
 
   // Phase 3 - Urgency
   NOTE_C4, NOTE_F4, NOTE_C4, NOTE_G4,
+  
   NOTE_C4, NOTE_F4, NOTE_G4, NOTE_A4,
 
   // Phase 4 - Imminent danger
   NOTE_D4, NOTE_A4, NOTE_D4, NOTE_A4,
+  
   NOTE_D5, NOTE_A4, NOTE_D5, NOTE_A5
 };
 
@@ -234,18 +264,22 @@ int Alertmelody[] = {
 int alertnoteDurations[] = {
   // Phase 1 - Slower at the beginning
   4, 4, 4, 8,
+  
   4, 4, 4, 8,
 
   // Phase 2 - Progressive acceleration
   4, 4, 4, 4,
+  
   4, 4, 4, 4,
 
   // Phase 3 - Even faster
   3, 3, 3, 3,
+  
   3, 3, 3, 3,
 
   // Phase 4 - Fast and shrill notes
   2, 2, 2, 2,
+  
   2, 2, 2, 2
 };
 
@@ -254,18 +288,22 @@ int alertnoteDurations[] = {
 int volumes[] = {
   // Phase 1 - Low volume
   100, 100, 100, 0,
+  
   120, 120, 120, 0,
 
   // Phase 2 - Medium volume
   140, 140, 140, 140,
+  
   160, 160, 160, 160,
 
   // Phase 3 - Louder volume
   180, 180, 180, 180,
+  
   200, 200, 200, 200,
 
   // Phase 4 - Maximum volume
   220, 220, 230, 230,
+  
   240, 240, 255, 255
 };
 

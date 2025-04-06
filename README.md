@@ -399,7 +399,9 @@ void FrereJacques()
     tone(BUZZER_PIN, melody[i], noteDurations[i]);
     delay(noteDurations[i] * 1.3);  // Small pause between notes
     noTone(BUZZER_PIN);             // Stop the note
+
   }
+
 }
 
 // Function to play the magical achievement melody
@@ -422,15 +424,20 @@ void playMagicalAchievementMelody()
     
     delay(noteDuration + 30);
     noTone(BUZZER_PIN);
+  
   }
+
 }
 
 // Function to play the water alert melody
 void playWaterAlertMelody() 
+
 {
   int size = sizeof(Alertmelody) / sizeof(Alertmelody[0]);
 
-  for (int note = 0; note < size; note++) {
+  for (int note = 0; note < size; note++) 
+  
+  {
    
     // Calculate the duration of the note (1 second divided by note type)
     int noteDuration = 1000 / alertnoteDurations[note];
@@ -455,31 +462,44 @@ void playWaterAlertMelody()
 
     // Short pause between notes
     delay(30);
+
   }
+
 }
 
 void loop() 
+
 {
   unsigned long debutAttente = millis();  
+ 
   // Record the start time
+ 
   bool seuilAtteint = false;             
+ 
   // Variable to check if the threshold is reached
 
   // Check if the temperature is above 30°C
+  
   /*
   float temperature = dht.readTemperature();
   if (temperature >= 30) 
+  
   {
-    playWaterAlertMelody(); // Play the water alert melody
-  } */
+    playWaterAlertMelody();
+    
+    // Play the water alert melody
+  } 
+  */
 
   // Wait for 30 seconds while checking the temperature
   while (millis() - debutAttente < DELAI_VERIFICATION) 
+  
   {
     // Read the temperature in Celsius
     float temperature = dht.readTemperature();
     
     if (temperature >= 30) 
+  
     {
     playWaterAlertMelody(); // Play the water alert melody
   }
@@ -488,7 +508,8 @@ void loop()
     if (isnan(temperature)) 
     {
       Serial.println("Error: Unable to read temperature!");
-    } else 
+    } 
+    else 
     {
       Serial.print("Temperature: ");
       Serial.print(temperature);
@@ -507,6 +528,7 @@ void loop()
       {
         playMagicalAchievementMelody();  // Play the magical achievement melody
       }
+    
     }
     delay(1000);  // Wait 1 second between each reading
   }

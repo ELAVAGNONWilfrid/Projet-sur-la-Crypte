@@ -53,23 +53,26 @@ Passive buzzer connections
 ![image](https://github.com/user-attachments/assets/42a67c32-4c94-4970-974e-145ffae27e19)
 
 ## Arduino code
-// Include the DHT library for temperature and humidity sensing
-
+-----------------------------------------------------------------
 cpp
 
 #include <DHT.h>
 
-#define DHT_PIN 2       // Pin where the DHT sensor is connected
+#define DHT_PIN 2       
+// Pin where the DHT sensor is connected
 
 #define BUZZER_PIN 8
 
-#define TEMP_SEUIL_20 20  // Temperature threshold in degrees Celsius (for magical melody)
+#define TEMP_SEUIL_20 20  
+// Temperature threshold in degrees Celsius (for magical melody)
 
-#define TEMP_SEUIL_22 22  // Temperature threshold in degrees Celsius (for Frère Jacques melody)
+#define TEMP_SEUIL_22 22 
+// Temperature threshold in degrees Celsius (for Frère Jacques melody)
 
 // Define the verification delay (30 seconds)
 
-#define DELAI_VERIFICATION 30000  // 30 seconds in milliseconds
+#define DELAI_VERIFICATION 30000  
+// 30 seconds in milliseconds
 
 /* Settings for the melody below 20°C */
 

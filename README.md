@@ -82,6 +82,7 @@ cpp
 
 // Frère Jacques melody - Notes (frequencies) and durations (in milliseconds)
 int melody[] = 
+
 {
  
   262, 294, 330, 262,           
@@ -347,6 +348,7 @@ int alertnoteDurations[] = {
 // Values increase to create a crescendo
 
 int volumes[] = 
+
 {
   // Phase 1 - Low volume
   

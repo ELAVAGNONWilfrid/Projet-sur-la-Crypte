@@ -60,66 +60,66 @@ cpp
 
 #define DHT_PIN 2       
 
-// Pin where the DHT sensor is connected
-
+   // Pin where the DHT sensor is connected
+ 
 #define BUZZER_PIN 8
 
 #define TEMP_SEUIL_20 20  
 
-// Temperature threshold in degrees Celsius (for magical melody)
+   // Temperature threshold in degrees Celsius (for magical melody)
 
 #define TEMP_SEUIL_22 22 
 
-// Temperature threshold in degrees Celsius (for Frère Jacques melody)
+    // Temperature threshold in degrees Celsius (for Frère Jacques melody)
 
-// Define the verification delay (30 seconds)
+   // Define the verification delay (30 seconds)
 
 #define DELAI_VERIFICATION 30000  
 
-// 30 seconds in milliseconds
+   // 30 seconds in milliseconds
 
-/* Settings for the melody below 20°C */
+   /* Settings for the melody below 20°C */
 
-// Frère Jacques melody - Notes (frequencies) and durations (in milliseconds)
+   // Frère Jacques melody - Notes (frequencies) and durations (in milliseconds)
 int melody[] = 
 
 {
  
   262, 294, 330, 262,           
   
-  // Frère Jacques
+     // Frère Jacques
   
   262, 294, 330, 262,          
   
-  // Frère Jacques
+     // Frère Jacques
   
   330, 349, 392,               
   
-  // Dormez-vous ?
+      // Dormez-vous ?
   
   330, 349, 392,              
   
-  // Dormez-vous ?
+     // Dormez-vous ?
   
   392, 440, 392, 349, 330, 262,  
   
-  // Sonnez les matines !
+     // Sonnez les matines !
   
   392, 440, 392, 349, 330, 262, 
   
-  // Sonnez les matines !
+     // Sonnez les matines !
   
   262, 196, 262,                
   
-  // Ding, dang, dong
+     // Ding, dang, dong
   
   262, 196, 262                 
   
-  // Ding, dang, dong
+    // Ding, dang, dong
 
 };
 
-// Durations for each note in the melody
+    // Durations for each note in the melody
 
 int noteDurations[] = 
 {
@@ -142,9 +142,9 @@ int noteDurations[] =
   
 };
 
-/* Settings for the melody below 20°C */
+   /* Settings for the melody below 20°C */
 
-// Define musical notes (frequencies in Hz)
+   // Define musical notes (frequencies in Hz)
 
 #define NOTE_C4 262
 
@@ -187,29 +187,29 @@ int magicalMelody[] =
 
 {
 
-// Part 1: Mysterious opening (arpeggio ascent)
+  // Part 1: Mysterious opening (arpeggio ascent)
 
   NOTE_C5, NOTE_E5, NOTE_G5, NOTE_C6,
 
-  // Part 2: First triumphant motif
+    // Part 2: First triumphant motif
   
   NOTE_E6, NOTE_D6, NOTE_C6, NOTE_G5,
   
   NOTE_E6, NOTE_D6, NOTE_C6, NOTE_G5,
 
-  // Part 3: Magical passage (series of chords)
+    // Part 3: Magical passage (series of chords)
   
   NOTE_A5, NOTE_C6, NOTE_A5, NOTE_C6,
   
   NOTE_G5, NOTE_B5, NOTE_G5, NOTE_B5,
 
-  // Part 4: Culminating fanfare
+    // Part 4: Culminating fanfare
   
   NOTE_C6, NOTE_G5, NOTE_E5, NOTE_G5,
   
   NOTE_C6, NOTE_E6, NOTE_D6, NOTE_E6,
 
-  // Part 5: Magical finale (descending arpeggio followed by ascent)
+   // Part 5: Magical finale (descending arpeggio followed by ascent)
   
   NOTE_C6, NOTE_A5, NOTE_F5, NOTE_D5,
   
@@ -219,35 +219,35 @@ int magicalMelody[] =
 
 };
 
-// Durations of the notes (1 = quarter note, 2 = eighth note, 4 = sixteenth note, etc.)
+   // Durations of the notes (1 = quarter note, 2 = eighth note, 4 = sixteenth note, etc.)
 
 int magicalDurations[] = 
 
 {
 
-  // Part 1: Mysterious opening - longer-held notes
+     // Part 1: Mysterious opening - longer-held notes
   
   3, 3, 3, 2,
 
-  // Part 2: First triumphant motif - more marked rhythm
+     // Part 2: First triumphant motif - more marked rhythm
   
   2, 2, 2, 1,
   
   2, 2, 2, 1,
 
-  // Part 3: Magical passage - swaying rhythm
+    // Part 3: Magical passage - swaying rhythm
   
   4, 4, 4, 4,
   
   4, 4, 4, 4,
 
-  // Part 4: Culminating fanfare - triumphant march
+    // Part 4: Culminating fanfare - triumphant march
   
   2, 4, 4, 2,
   
   2, 3, 3, 1,
 
-  // Part 5: Magical finale - epic conclusion
+     // Part 5: Magical finale - epic conclusion
   
   2, 2, 2, 2,
   
@@ -256,9 +256,9 @@ int magicalDurations[] =
   2, 1
 };
 
-/* Settings for the melody above 30°C */
+    /* Settings for the melody above 30°C */
 
-// Define musical notes (frequencies in Hz)
+   // Define musical notes (frequencies in Hz)
 
 #define NOTE_A3 220  // Low A
 
@@ -280,62 +280,62 @@ int magicalDurations[] =
 
 #define NOTE_A5 880  // High A
 
-// Notes for the alert melody (progression from low to high)
+   // Notes for the alert melody (progression from low to high)
 
 int Alertmelody[] = 
 
 {
 
-  // Phase 1 - Initial tension (water droplets)
+     // Phase 1 - Initial tension (water droplets)
   
   NOTE_A3, NOTE_D4, NOTE_A3, 0,
   
   NOTE_A3, NOTE_D4, NOTE_A3, 0,
 
-  // Phase 2 - Increasing tension
+     // Phase 2 - Increasing tension
   
   NOTE_A3, NOTE_D4, NOTE_A3, NOTE_E4,
   
   NOTE_A3, NOTE_D4, NOTE_A3, NOTE_E4,
 
-  // Phase 3 - Urgency
+     // Phase 3 - Urgency
   
   NOTE_C4, NOTE_F4, NOTE_C4, NOTE_G4,
   
   NOTE_C4, NOTE_F4, NOTE_G4, NOTE_A4,
 
-  // Phase 4 - Imminent danger
+     // Phase 4 - Imminent danger
   
   NOTE_D4, NOTE_A4, NOTE_D4, NOTE_A4,
   
   NOTE_D5, NOTE_A4, NOTE_D5, NOTE_A5
 };
 
-// Durations of the notes (1 = quarter note, 2 = eighth note, 4 = sixteenth note)
+   // Durations of the notes (1 = quarter note, 2 = eighth note, 4 = sixteenth note)
 
-// Smaller values = faster notes
+   // Smaller values = faster notes
 
 int alertnoteDurations[] = {
 
-  // Phase 1 - Slower at the beginning
+    // Phase 1 - Slower at the beginning
   
   4, 4, 4, 8,
   
   4, 4, 4, 8,
 
-  // Phase 2 - Progressive acceleration
+     // Phase 2 - Progressive acceleration
   
   4, 4, 4, 4,
   
   4, 4, 4, 4,
-
-  // Phase 3 - Even faster
+  
+     // Phase 3 - Even faster
   
   3, 3, 3, 3,
   
   3, 3, 3, 3,
 
-  // Phase 4 - Fast and shrill notes
+     // Phase 4 - Fast and shrill notes
   
   2, 2, 2, 2,
   
@@ -343,32 +343,32 @@ int alertnoteDurations[] = {
   
 };
 
-// Volumes (for PWM-compatible buzzers)
+     // Volumes (for PWM-compatible buzzers)
 
-// Values increase to create a crescendo
+     // Values increase to create a crescendo
 
 int volumes[] = 
 
 {
-  // Phase 1 - Low volume
-  
+     // Phase 1 - Low volume
+   
   100, 100, 100, 0,
   
   120, 120, 120, 0,
 
-  // Phase 2 - Medium volume
+     // Phase 2 - Medium volume
   
   140, 140, 140, 140,
   
   160, 160, 160, 160,
 
-  // Phase 3 - Louder volume
+     // Phase 3 - Louder volume
   
   180, 180, 180, 180,
   
   200, 200, 200, 200,
 
-  // Phase 4 - Maximum volume
+     // Phase 4 - Maximum volume
   
   220, 220, 230, 230,
   
@@ -377,22 +377,22 @@ int volumes[] =
 
 void setup() 
 {
-  // Start serial communication at 9600 baud for debugging
+     // Start serial communication at 9600 baud for debugging
   
   Serial.begin(9600);
   
   Serial.println("Initializing DHT sensor...");
 
-  // Initialize the DHT sensor
+     // Initialize the DHT sensor
   
   dht.begin();
 
-  // Configure the buzzer pin as an output
+     // Configure the buzzer pin as an output
   
   pinMode(BUZZER_PIN, OUTPUT);
 }
 
-// Function to play the Frère Jacques melody
+     // Function to play the Frère Jacques melody
 
 void FrereJacques() 
 {
@@ -406,7 +406,7 @@ void FrereJacques()
 
 }
 
-// Function to play the magical achievement melody
+    // Function to play the magical achievement melody
 void playMagicalAchievementMelody()
 {
   int size = sizeof(magicalMelody) / sizeof(magicalMelody[0]);
@@ -431,7 +431,7 @@ void playMagicalAchievementMelody()
 
 }
 
-// Function to play the water alert melody
+    // Function to play the water alert melody
 void playWaterAlertMelody() 
 
 {
@@ -446,18 +446,18 @@ void playWaterAlertMelody()
 
     if (Alertmelody[note] == 0) 
     { 
-      // If the note is 0, it's a silence
+    // If the note is 0, it's a silence
       delay(noteDuration);
     } 
     else 
     {
     
-      // Play the note with the appropriate volume if PWM is available
+    // Play the note with the appropriate volume if PWM is available
      
-      // If no PWM, use standard tone()
+    // If no PWM, use standard tone()
       tone(BUZZER_PIN, Alertmelody[note], noteDuration * 0.9);
 
-      // A slight pause between notes to distinguish them
+    // A slight pause between notes to distinguish them
       delay(noteDuration);
       noTone(BUZZER_PIN);
     }
@@ -474,13 +474,13 @@ void loop()
 {
   unsigned long debutAttente = millis();  
  
-  // Record the start time
+   // Record the start time
  
   bool seuilAtteint = false;             
  
-  // Variable to check if the threshold is reached
+   // Variable to check if the threshold is reached
 
-  // Check if the temperature is above 30°C
+   // Check if the temperature is above 30°C
   
   /*
   float temperature = dht.readTemperature();
@@ -492,8 +492,8 @@ void loop()
     // Play the water alert melody
   } 
   */
-
-  // Wait for 30 seconds while checking the temperature
+  
+    // Wait for 30 seconds while checking the temperature
   while (millis() - debutAttente < DELAI_VERIFICATION) 
   
   {
@@ -503,7 +503,8 @@ void loop()
     if (temperature >= 30) 
   
     {
-    playWaterAlertMelody(); // Play the water alert melody
+    playWaterAlertMelody(); 
+    // Play the water alert melody
   }
 
     // Check if the reading is valid
@@ -532,15 +533,29 @@ void loop()
       }
     
     }
-    delay(1000);  // Wait 1 second between each reading
+    delay(1000); // Wait 1 second between each reading
   }
 
   // If the temperature did not drop below the threshold
-  Serial.println("The temperature did not drop below the threshold.\n Crypt closed and melody lost");
-  digitalWrite(ACTION_PIN, HIGH);  // Turn on the LED (or perform another action)
-  delay(5000);                     // Keep the action active for 5 seconds
-  digitalWrite(ACTION_PIN, LOW);   // Turn off the LED
-  delay(1000);  // Wait 1 second before restarting
+  
+  Serial.println ("The temperature did not drop below the threshold.\n Crypt closed and melody lost");
+  
+  digitalWrite(ACTION_PIN, HIGH);  
+  
+  // Turn on the LED (or perform another action)
+  
+  delay(5000);                     
+  
+  // Keep the action active for 5 seconds
+  
+  digitalWrite(ACTION_PIN, LOW);   
+  
+  // Turn off the LED
+  
+  delay(1000);  
+  
+  // Wait 1 second before restarting
+
 }
 
 ---

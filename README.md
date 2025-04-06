@@ -81,27 +81,48 @@ cpp
 /* Settings for the melody below 20°C */
 
 // Frère Jacques melody - Notes (frequencies) and durations (in milliseconds)
-int melody[] = {
+int melody[] = 
+{
+ 
   262, 294, 330, 262,           
+  
   // Frère Jacques
+  
   262, 294, 330, 262,          
+  
   // Frère Jacques
+  
   330, 349, 392,               
+  
   // Dormez-vous ?
+  
   330, 349, 392,              
+  
   // Dormez-vous ?
+  
   392, 440, 392, 349, 330, 262,  
+  
   // Sonnez les matines !
+  
   392, 440, 392, 349, 330, 262, 
+  
   // Sonnez les matines !
+  
   262, 196, 262,                
+  
   // Ding, dang, dong
+  
   262, 196, 262                 
+  
   // Ding, dang, dong
+
 };
 
 // Durations for each note in the melody
-int noteDurations[] = {
+
+int noteDurations[] = 
+{
+
   500, 500, 500, 500,
   
   500, 500, 500, 500,
@@ -161,7 +182,9 @@ int noteDurations[] = {
 #define NOTE_E6 1319
 
 // Magical and fantastic melody - inspired by discovery/success music in video games
-int magicalMelody[] = {
+int magicalMelody[] = 
+
+{
 
 // Part 1: Mysterious opening (arpeggio ascent)
 
@@ -192,11 +215,14 @@ int magicalMelody[] = {
   NOTE_C5, NOTE_D5, NOTE_F5, NOTE_A5,
   
   NOTE_C6, NOTE_E6
+
 };
 
 // Durations of the notes (1 = quarter note, 2 = eighth note, 4 = sixteenth note, etc.)
 
-int magicalDurations[] = {
+int magicalDurations[] = 
+
+{
 
   // Part 1: Mysterious opening - longer-held notes
   
@@ -254,7 +280,10 @@ int magicalDurations[] = {
 #define NOTE_A5 880  // High A
 
 // Notes for the alert melody (progression from low to high)
-int Alertmelody[] = {
+
+int Alertmelody[] = 
+
+{
 
   // Phase 1 - Initial tension (water droplets)
   

@@ -56,6 +56,8 @@ Passive buzzer connections
 -----------------------------------------------------------------
 cpp
 
+```cpp
+
 #include <DHT.h>
 
 #define DHT_PIN 2       
@@ -558,4 +560,5 @@ void loop()
 
 }
 
+```
 ---

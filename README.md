@@ -55,7 +55,6 @@ Passive buzzer connections
 ## Arduino code
 -----------------------------------------------------------------
 
-
 ```cpp
 
 #include <DHT.h>
@@ -561,4 +560,4 @@ void loop()
 }
 
 ```
----
+

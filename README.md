@@ -56,7 +56,7 @@ Passive buzzer connections
 -----------------------------------------------------------------
 cpp
 
-```cpp
+
 
 #include <DHT.h>
 

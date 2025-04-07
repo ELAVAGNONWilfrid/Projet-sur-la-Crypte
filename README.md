@@ -54,7 +54,7 @@ Passive buzzer connections
 
 ## Arduino code
 -----------------------------------------------------------------
-cpp
+```cpp
 
 #include <DHT.h>
 
@@ -557,5 +557,5 @@ void loop()
   // Wait 1 second before restarting
 
 }
-
+```
 ---
